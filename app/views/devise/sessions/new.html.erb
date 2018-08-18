@@ -3,7 +3,7 @@
     <div class="col-sm-4">
     </div>    
     <div class="col-sm-4 col-xs-12">
-      <h2>Log in</h2>
+      <h2>Connexion</h2>
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">
           <%= f.input :email,
@@ -17,7 +17,7 @@
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "Log in" %>
+          <%= f.button :submit, "Connexion" %>
         </div>
       <% end %>
 
