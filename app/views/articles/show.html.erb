@@ -1,0 +1,11 @@
+<div class="container">
+		<h1><%= @article.title %> by <span style="color: #1db954"><%= @article.user.email %></span></h1>
+	<div class="row">
+		<p><%= @article.body %></p>
+		<% if user_signed_in? && current_user == @article.user %>
+			<%= link_to("Editer", edit_article_path(@article)) %>
+			<%= link_to("Supprimer", article_path(@article), method: :delete,
+              data: { confirm: "Vous allez supprimer l'article : #{@article.title}" }) %>
+		<% end %>
+	</div>
+</div>

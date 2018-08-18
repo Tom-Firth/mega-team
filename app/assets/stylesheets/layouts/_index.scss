@@ -1,0 +1,83 @@
+// Import your layouts CSS files here.
+// Examples:
+// @import "dashboard";
+// @import "profile";
+// @import "map";
+
+/* body, html {
+	background-image: linear-gradient(to right bottom, #7b4397, #a1338a, #c01d73, #d40d55, #dc2430);
+} */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #303030;
+	color: #DDD;
+}
+
+h1, h2, h3, a {
+	color: #DDD;
+}
+
+a {
+	transition-duration: 0.1s;
+}
+
+a:hover {
+	color: #1db954;
+	text-decoration: none;
+}
+
+.card-link {
+	background-color: rgba(0,0,0,0.17);
+	height: 100px;
+	box-shadow: 0 1rem 3rem rgba(0,0,0,0.17)!important;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	opacity: 0.8;
+}
+
+.card-link:hover {
+	opacity: 1;
+}
+
+.card-link a {
+	text-transform: uppercase;
+	font-size: 25px;
+	transition-duration: 0.1s;
+}
+
+.card-link a:hover {
+	font-weight: bold;
+	color: #DDD;
+}
+
+.btn {
+	background-color: #1db954;
+	color: #DDD;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 50px;
+	width: 250px;
+	height: 50px;
+	opacity: 0.8;
+	transition-duration: 0.5s;
+}
+
+.btn:hover {
+	color: #DDD;
+	opacity: 1;
+	// background-color: green;
+}
+
+.form-actions {
+	display: flex;
+	justify-content: center;
+}
+
+#article_body {
+	min-height: 500px; 
+}
