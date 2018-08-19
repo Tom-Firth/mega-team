@@ -66,6 +66,9 @@ a:hover {
 	height: 50px;
 	opacity: 0.8;
 	transition-duration: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .btn:hover {
@@ -81,4 +84,8 @@ a:hover {
 
 #article_body {
 	min-height: 500px; 
+}
+
+.navbar-wagon{
+	display: block;
 }
