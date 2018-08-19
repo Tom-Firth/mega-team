@@ -4,7 +4,13 @@ class ArticlesController < ApplicationController
   end
 
   def show
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
     @article = Article.find(params[:id])
+    if @article.body.downcase.include?("<script")
+      @ninja = true
+    else
+      @body_markdown = markdown.render(@article.body)
+    end
   end
 
   def new
