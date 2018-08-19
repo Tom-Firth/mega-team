@@ -1,10 +1,12 @@
 <% if @article.user == current_user %>
 	<div class="container">
-	  <h1>Edition - <%= @article.title %></h1>
+	  <center>
+	  	<h1>Edition - <span class="title-show"><%= @article.title %></span></h1>
+	  </center>
 	  <div class="row">
-	    <div class="col-sm-4">
+	    <div class="col-sm-2">
 	    </div>    
-	    <div class="col-sm-4 col-xs-12">
+	    <div class="col-sm-8 col-xs-12">
 	      <%= simple_form_for(@article) do |f| %>
 	        <div class="form-inputs">
 	          <%= f.input :title %>
@@ -18,7 +20,7 @@
 	      <% end %>
 
 	    </div>    
-	    <div class="col-sm-4">
+	    <div class="col-sm-2">
 	    </div>    
 	  </div>
 	</div>

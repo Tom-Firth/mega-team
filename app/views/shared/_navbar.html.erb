@@ -31,7 +31,6 @@
     <%= link_to t(".sign_in", default: "Connexion"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
-
   <% if user_signed_in? %>
   <!-- Dropdown list appearing on mobile only -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
@@ -44,12 +43,12 @@
           <%= link_to "Ajouter", new_article_path, class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to destroy_user_session_path, method: :delete do %>
           <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Deconnexion") %>
+</div>
           <% end %>
         </li>
       </ul>
     </div>
   </div>
-</div>
 <% else %>
 <!-- Dropdown list appearing on mobile only -->
 <div class="navbar-wagon-item hidden-md hidden-lg">
@@ -57,8 +56,8 @@
     <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
     <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
       <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+</div>
       <% end %>
     </ul>
   </div>
-</div>
 </div>

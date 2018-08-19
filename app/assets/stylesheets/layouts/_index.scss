@@ -13,6 +13,8 @@ html, body {
 	font-family: 'Montserrat', sans-serif;
 	background-color: #303030;
 	color: #DDD;
+	height: 100%;
+	overflow-x: hidden; 
 }
 
 h1, h2, h3, a {
@@ -26,6 +28,34 @@ a {
 a:hover {
 	color: #1db954;
 	text-decoration: none;
+}
+
+input[type=text], input[type=password], input[type=email] {
+	background-color: rgba(0, 0, 0, 0);
+	color: #DDD;
+}
+
+textarea {
+	background-color: rgba(0, 0, 0, 0) !important;
+	color: #DDD !important;
+}
+
+.title-show {
+	color: orange;
+	text-transform: uppercase;
+}
+
+.form-control:focus {
+  border-color: orange;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.container {
+	background-color: #252525;
+	padding: 0px 60px 60px 60px;
+	margin-top: 60px;
+	border-radius: 4px; 
 }
 
 .card-link {
@@ -43,6 +73,7 @@ a:hover {
 
 .card-link:hover {
 	opacity: 1;
+	color: #CCC;
 }
 
 .card-link a {
@@ -69,12 +100,23 @@ a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	margin-top: 10px;
 }
 
 .btn:hover {
 	color: #DDD;
 	opacity: 1;
 	// background-color: green;
+}
+
+.btn-delete {
+	color: #FFF;
+	background-color: orange;
+	// margin-top: 10px;
+}
+
+.btn-delete:hover {
+	background-color: #DD3535;
 }
 
 .form-actions {
@@ -88,4 +130,20 @@ a:hover {
 
 .navbar-wagon{
 	display: block;
+}
+
+.article-div-body {
+	border: 1px solid #AAA;
+	margin: 20px 0px;
+	border-radius: 4px;
+  	word-wrap: break-word;
+
+}
+
+.article-p-body {
+	margin-top: 10px;
+}
+
+.btn-edit {
+	padding: 0;
 }

@@ -1,11 +1,35 @@
 <div class="container">
-		<h1><%= @article.title %> by <span style="color: #1db954"><%= @article.user.email %></span></h1>
+	<center>
+		<h1 class="title-show"><%= @article.title %></h1>
+		by <span style="color: #1db954"><%= @article.user.email %></span>
+	</center>
+
 	<div class="row">
-		<p><%= @article.body %></p>
-		<% if user_signed_in? && current_user == @article.user %>
-			<%= link_to("Editer", edit_article_path(@article)) %>
-			<%= link_to("Supprimer", article_path(@article), method: :delete,
-              data: { confirm: "Vous allez supprimer l'article : #{@article.title}" }) %>
-		<% end %>
+
+		<div class="col-sm-1">		
+		</div>
+
+		<div class="col-sm-10 col-xs-12 article-div-body">		
+			<p class="article-p-body"><%= @article.body %></p>
+		</div>
+
+		<div class="col-sm-1">		
+		</div>
 	</div>
+
+		<% if user_signed_in? && current_user == @article.user %>
+			<center>
+			<div class="col-lg-3 col-sm-1">
+			</div>
+			<div class="col-lg-3 col-sm-5 col-xs-12 btn-edit">
+				<%= link_to("Editer", edit_article_path(@article), class: "btn") %>
+			</div>
+			<div class="col-lg-3 col-sm-5 col-xs-12 btn-edit">
+				<%= link_to("Supprimer", article_path(@article), class: "btn btn-delete", method: :delete,
+				data: { confirm: "Vous allez supprimer l'article : #{@article.title}" }) %>
+			</div>
+			<div class="col-lg-3 col-sm-1">
+			</div>
+			</center>
+		<% end %>
 </div>
