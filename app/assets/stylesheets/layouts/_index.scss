@@ -137,13 +137,20 @@ textarea {
 	margin: 20px 0px;
 	border-radius: 4px;
   	word-wrap: break-word;
-
-}
-
-.article-p-body {
-	margin-top: 10px;
+	padding-top: 30px;
 }
 
 .btn-edit {
 	padding: 0;
+}
+
+// MARKDOWN STYLE
+
+code {
+    padding: 10px 10px;
+    margin: 10px;
+    font-size: 90%;
+    color: orange;
+ 	background-color: #151515;
+  	border-radius: 2px;
 }

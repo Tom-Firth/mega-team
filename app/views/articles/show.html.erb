@@ -10,13 +10,14 @@
 		</div>
 
 		<div class="col-sm-10 col-xs-12 article-div-body">		
-			<p class="article-p-body">
 				<% if @ninja %>
-				<center style="color: #606060"><i class="fas fa-user-ninja" style="color: #AAA; font-size: 40px;" ></i><br><\Script Inject Security></center> 
+					<center style="color: #606060">
+						<i class="fas fa-user-ninja" style="color: #AAA; font-size: 40px;" ></i><br>
+						<\Script Inject Security>
+					</center> 
 				<% else %>
-				<%= @body_markdown.html_safe %>
-				<% end %>
-			</p>		
+					<%= @body_markdown.html_safe %>
+				<% end %>		
 		</div>
 
 		<div class="col-sm-1">		
