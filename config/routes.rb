@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  
+
+
+  get '/mises-a-jour', to: 'pages#maj', as: 'maj'
 
   resources :articles
   devise_for :users

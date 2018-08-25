@@ -14,7 +14,7 @@ html, body {
 	background-color: #303030;
 	color: #DDD;
 	height: 100%;
-	overflow-x: hidden; 
+	overflow-x: hidden;
 }
 
 h1, h2, h3, a {
@@ -55,7 +55,7 @@ textarea {
 	background-color: #252525;
 	padding: 0px 60px 60px 60px;
 	margin-top: 60px;
-	border-radius: 4px; 
+	border-radius: 4px;
 }
 
 .card-link {
@@ -125,7 +125,7 @@ textarea {
 }
 
 #article_body {
-	min-height: 500px; 
+	min-height: 500px;
 }
 
 .navbar-wagon{
@@ -136,7 +136,7 @@ textarea {
 	border: 1px solid #AAA;
 	margin: 20px 0px;
 	border-radius: 4px;
-  	word-wrap: break-word;
+  word-wrap: break-word;
 	padding-top: 30px;
 }
 
@@ -147,10 +147,18 @@ textarea {
 // MARKDOWN STYLE
 
 code {
-    padding: 10px 10px;
-    margin: 10px;
-    font-size: 90%;
-    color: orange;
+  padding: 10px 10px;
+  margin: 10px;
+  font-size: 90%;
+  color: orange;
  	background-color: #151515;
-  	border-radius: 2px;
+  border-radius: 2px;
+}
+
+.article-div-body * a {
+  color: orange;
+}
+
+.article-div-body * a:hover {
+  color: green;
 }

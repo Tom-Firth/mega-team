@@ -1,26 +1,26 @@
 <div class="container">
 	<center>
 		<h1 class="title-show"><%= @article.title %></h1>
-		by <span style="color: #1db954"><%= @article.user.email %></span>
+		by <span style="color: #1db954"><%= @article.user.username %></span>
 	</center>
 
 	<div class="row">
 
-		<div class="col-sm-1">		
+		<div class="col-sm-1">
 		</div>
 
-		<div class="col-sm-10 col-xs-12 article-div-body">		
+		<div class="col-sm-10 col-xs-12 article-div-body">
 				<% if @ninja %>
 					<center style="color: #606060">
 						<i class="fas fa-user-ninja" style="color: #AAA; font-size: 40px;" ></i><br>
 						<\Script Inject Security>
-					</center> 
+					</center>
 				<% else %>
 					<%= @body_markdown.html_safe %>
-				<% end %>		
+				<% end %>
 		</div>
 
-		<div class="col-sm-1">		
+		<div class="col-sm-1">
 		</div>
 	</div>
 

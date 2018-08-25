@@ -12,6 +12,7 @@
     <!-- Links when logged in -->
     <%= link_to "Articles", articles_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <%= link_to "Ajouter", new_article_path, class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Mises à jour", maj_path, class: "navbar-wagon-item navbar-wagon-link" %>
 
     <!-- Avatar with dropdown menu -->
     <div class="navbar-wagon-item">
@@ -41,6 +42,7 @@
           <!-- Links when logged in -->
           <%= link_to "Articles", articles_path, class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to "Ajouter", new_article_path, class: "navbar-wagon-item navbar-wagon-link" %>
+          <%= link_to "Mises à jour", maj_path, class: "navbar-wagon-item navbar-wagon-link" %>
           <%= link_to destroy_user_session_path, method: :delete do %>
           <i class="fa fa-sign-out"></i>  <%= t(".sign_out", default: "Deconnexion") %>
 </div>

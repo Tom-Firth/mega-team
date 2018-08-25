@@ -3,8 +3,11 @@ class PagesController < ApplicationController
   def home
   	@hometest = "toto"
   	if user_signed_in?
-	 redirect_to articles_path
-	end
+	    redirect_to articles_path
+	  end
+  end
+
+  def maj
   end
 
 end
